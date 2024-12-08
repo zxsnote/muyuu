@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: skyblue
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+button {
+    cursor: pointer
+}
+
+body {
+    /*抗锯齿字体平滑*/
+    -webkit-font-smoothing: antialiased;
+    background-color: #eee;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+    height: 100vh;
+    position: relative
+}
+
+.container {
+    margin: 0 auto;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    text-align: center;
+    color: #4f4f4f;
+}
+
+.time_econd {
+    font-size: 5em;
+    font-family: 'font-DDR' !important;
+}
+
+h3 {
+    font-family: 'font-tingshan' !important;
+}
+
+.main {
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 25%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10em;
+    box-shadow: 0 0 0 5px #fff, 4px 3px 5px 3px #c1c1c1;
+}
+
+.logo img:hover {
+    animation: round_animate 1s linear infinite;
+    -webkit-animation: round_animate 1s linear infinite;
+}
+
+@keyframes round_animate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.my_name {
+    margin-top: 15px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.my_name h2 {
+    font-family: 'font-youyuan' !important;
+    font-size: 2em;
+}
+
+.my_ico_link {
+    margin-top: 15px;
+}
+
+.my_ico_link ul {
+    text-align: center;
+}
+
+.my_ico_link ul li {
+    display: inline-block;
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    background-color: #eee;
+    box-shadow: 3px 2px 6px 0px #b1b1b1, -1px -2px 6px 2px #ffffff;
+}
+
+.my_ico_link ul li:hover {
+    box-shadow: inset 1px 1px 1px 1px #0000001a, inset -1px -1px 2px #fff;
+}
+
+.my_ico_link ul li:nth-of-type(1) {
+    background: url(../images/sprite.png) no-repeat 6px 7px;
+}
+
+.my_ico_link ul li:nth-of-type(2) {
+    margin: 0 18px;
+    background: url(../images/sprite.png) no-repeat 6px -43px;
+}
+
+.my_ico_link ul li:nth-of-type(3) {
+    background: url(../images/sprite.png) no-repeat 7px -93px;
+}
+
+.my_ico_link ul li:nth-of-type(4) {
+    margin-left: 18px;
+    background: url(../images/sprite.png) no-repeat 7px -143px;
+}
+
+.my_hitokoto {
+    overflow: auto;
+    margin: 25px auto 5px auto;
+    width: 82%;
+    padding: 15px;
+    border-radius: 17px;
+    box-shadow: inset 1px 1px 1px 0px #acabab, inset 0px 0px 2px 2px #ffffff;
+}
+
+.my_hitokoto p {
+    text-indent: 2em;
+    font-size: 1.4em;
+    line-height: 25px;
+}
+
+.my_slide {
+    margin-top: -5px;
+    font-family: "iconfont" !important;
+    font-size: 2.2em;
+    color: #3f3f3f;
+    text-align: center;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color .5s;
+}
+
+.my_slide:hover {
+    color: rgb(119, 119, 119);
+}
+
+.my_slide:active {
+    color: skyblue;
+}
+
+.my_website {
+    display: none;
+}
+
+.my_website {
+    margin-top: -5px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.my_website a {
+    display: inline-block;
+    margin: 8px 15px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    font-weight: 800;
+    padding: 10px 12px;
+    width: 30%;
+    box-shadow: 3px 2px 5px 0px #c8c8c8, -1px -2px 3px 0px #ffffff;
+    transition: color 1s;
+}
+
+.my_website a:hover {
+    box-shadow: inset 1px 1px 1px 1px #0000001a, inset -1px -1px 2px #fff;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.footer p{
+    font-size: 1.2em;
+}
