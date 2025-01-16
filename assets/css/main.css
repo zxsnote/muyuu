@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'FangZheng';
+    src: url('../font/FangZhengKaiTiPinYinZiKu-1.woff') format('woff');
+}
+
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: skyblue
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+input {
+    background: none;
+    outline: none;
+    border: 0px;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /*抗锯齿字体平滑*/
+    -webkit-font-smoothing: antialiased;
+    background-color: #eee;
+    font: 12px / 1.5 PingFang SC, Source Han Sans CN, Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    text-align: center;
+    color: #4f4f4f;
+}
+
+
+.main {
+    padding: 10px 0;
+    margin-top: 4em;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #b1b4b6, -5px -5px 10px #ffffff;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.logo img {
+    width: 25%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10em;
+    box-shadow: 0 0 0 5px #fff, 4px 3px 5px 3px #c1c1c1;
+}
+
+.logo img:hover {
+    animation: round_animate 1s linear infinite;
+    -webkit-animation: round_animate 1s linear infinite;
+}
+
+@keyframes round_animate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-icon {
+    display: inline-block;
+    text-align: center;
+    line-height: 1em;
+    animation: spin 2s linear infinite;
+    /* 其他样式，比如宽高、颜色等 */
+}
+
+.my_name {
+    margin-top: 15px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.my_name h2 {
+    font-family: "FangZheng" !important;
+    font-size: 2em;
+}
+
+.my_ico_link {
+    margin-top: 15px;
+}
+
+.my_ico_link ul {
+    text-align: center;
+}
+
+.my_ico_link ul li {
+    display: inline-block;
+    margin-left: 3px;
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    background-color: #eee;
+    box-shadow: 3px 2px 6px 0px #b1b1b1, -1px -2px 6px 2px #ffffff;
+}
+
+.my_ico_link ul li:hover,
+.box_btn:hover {
+    box-shadow: inset 1px 1px 1px 1px #0000001a, inset -1px -1px 2px #fff;
+}
+
+.my_ico_link ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.my_ico_link ul li a svg {
+    font-size: 32px;
+}
+   
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    cursor: pointer;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.my_hitokoto {
+    overflow: auto;
+    margin: 25px auto 5px auto;
+    width: 82%;
+    padding: 15px;
+    border-radius: 17px;
+    box-shadow: inset 1px 1px 1px 0px #acabab, inset 0px 0px 2px 2px #ffffff;
+}
+
+.my_hitokoto p {
+    text-indent: 2em;
+    font-size: 1.4em;
+    font-family: "FangZheng" !important;
+    line-height: 25px;
+}
+
+.slide {
+    margin-top: -5px;
+    font-family: "iconfont" !important;
+    font-size: 2.2em;
+    color: #3f3f3f;
+    text-align: center;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: color .5s;
+}
+
+.slide:hover {
+    color: rgb(119, 119, 119);
+}
+
+.slide:active {
+    color: skyblue;
+}
+
+.website {
+    margin: 0 15px;
+    color: #1a1a1a;
+    display: none;
+}
+
+
+
+.box_text {
+    color: #4F46E5;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.25rem
+}
+
+.box_form {
+    position: relative;
+    color: #1F2937;
+    margin-bottom: 1.5rem
+}
+
+.box_lab {
+    display: block;
+    margin-bottom: .5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500
+}
+
+.box_in {
+    width: 100%;
+    padding: .75rem 1rem .75rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.2em;
+    box-shadow: inset 1px 1px 1px 0px #acabab, inset 0px 0px 2px 2px #ffffff;
+    background-color: #F3F4F6
+}
+
+.box_btn {
+    margin-top: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #333;
+    background-color: #eee;
+    box-shadow: 3px 2px 6px 0px #b1b1b1, -1px -2px 6px 2px #ffffff;
+    border-radius: .5rem;
+    font-weight: 700;
+    padding: .75em 0;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.footer p {
+    font-size: 1.2em;
+}
