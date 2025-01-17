@@ -3,4 +3,4 @@
 #### 介绍
 纯静态个人引导主页，新拟态风。忘了从哪下载的了，二次修改。
 
-![慕鱼周壹](https://foruda.gitee.com/images/1737003387136611092/51aadce9_1059427.png "慕鱼周壹")
+![image](https://github.com/user-attachments/assets/feec83cf-a469-4051-9134-b9c2380a793d)
